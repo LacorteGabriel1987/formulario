@@ -12,38 +12,38 @@
 
 	<body>
 		<div>
-			<h1 class="title"> <strong> Cadastro de Devs</h1>
-			<p class="subtitle"> <strong> Complete suas informações</p>
+			<h1 id="title"> <strong> Cadastro de Profissionais</h1><br>
+			<p id="subtitle"> <strong> Complete suas informações</p>
 			<br>
 		</div>
 
 			<form>
 				<fieldset class="grupo">
 					<div class="campo">
-						<label for="nome"><strong> Nome </strong></label>
-						<input type="text" name="name" id="name" required>
+						<label for="nome" >  <strong> Nome </strong></label>
+						<input type="text"name="name" id="name" required>
 					</div>
 
 					<div class="campo">						
 						<label for="Sobrenome"> Sobrenome </label>
-						<input type="text" name="Sobrenome" id="Sobrenome">
+						<input type="text" name="Sobrenome" id="Sobrenome" required>
 					</div>
 				</fieldset>
 
 				<div class="campo">
 					<label for= "email"> <strong> Email </strong></label>
-					<input type="Email" name="Email" id="Email">
-				</div>
+					<input type="Email" placeholder ="example@gmail.com.br"name="Email" id="Email" required>
+				</div><br><br>
 
 				<div class="campo">
-					<label> <strong> De qual lado da aplicação você desenvolve ? </strong> </label>
+					<label> <strong> Qual a sua especialização? </strong> </label><br>
 						<label>  <input type="radio" name="devweb" value="front-end" checked="">Front-end
 						</label>
 						<label>  <input type="radio" name="devweb" value="backend">Back-End
 						</label>
 						<label>  <input type="radio" name="devweb" value="FullStack">FullStak
 						</label>
-				</div>
+				</div><br>
 
 				<div class="campo">
 					
@@ -52,12 +52,24 @@
 						<option selected disabled value="">Escolha </option>
 						<option> Junior</option>
 						<option> Pleno</option>
-						<option> Senior</option>
+						<option> Sênior</option>
 					</select>
 				</div>
+				
+				<div class="campo">
+					
+					<label for="Tipo contrato"> <strong> Que tipo de contrato você procura: </strong></label>
+					<select id=" Senioridade">
+						<option selected disabled value="">Escolha </option>
+						<option> Home Office</option>
+						<option> Hibrido</option>
+						<option> Presencial</option>
+						<option> Indiferente</option>
+					</select>
+				</div><br><br>
 
-				<fieldset class="grupo">
-					<div class="campo">
+				<fieldset class="grupofinal">
+					<div class="campofinal">
 						<label> <strong> Selecione as tecnologias que utiliza:</strong> </label><br><br>
 
 						<input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML" checked="">
@@ -75,12 +87,14 @@
 
 				<div class="campo">
 					<br>
-					<label> <strong> Conte aqui sobre sua experiência </strong></label>
+					<label> <strong> Conte aqui sobre sua experiência: </strong></label><br>
 					<textarea rows="6" style="width: 26em" id="experiência" name="experiência"></textarea>
 				</div>
 
 				<button class="botao" type="submit"> Concluído </button>
 			</form>
+
+			<script src="principal.js"></script>
 
 	</body>
 
